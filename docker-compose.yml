@@ -5,12 +5,13 @@ services:
       context: "./RegistrationSys_AdminUI/"
       dockerfile: "./Dockerfile"
     volumes:
-      - /Users/mohamedrefaat/Desktop/All/ForthYear/SecondTerm/CloudComputing/Assignments/A2-Repo2/data:/app/data
-  # student:
-  #   build:
-  #     context: "../RegistrationSys_StudentUI/RegistrationSys_StudentUI"
-  #     dockerfile: "./Dockerfile"
-  #   volumes: 
-  #   - type: "bind"
-  #     source: "../data"
-  #     target: "/app/data"
+      - ./data:/app/data
+  student:
+    build:
+      context: "../RegistrationSys_StudentUI/RegistrationSys_StudentUI/"
+      dockerfile: "./Dockerfile"
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    command: /bin/bash
+    volumes:
+      - ./data:/app/data
