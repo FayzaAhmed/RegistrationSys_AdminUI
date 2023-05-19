@@ -1,0 +1,16 @@
+version: "3"
+services:
+  admin:
+    build:
+      context: "./RegistrationSys_AdminUI/"
+      dockerfile: "./Dockerfile"
+    volumes:
+      - /Users/mohamedrefaat/Desktop/All/ForthYear/SecondTerm/CloudComputing/Assignments/A2-Repo2/data:/app/data
+  # student:
+  #   build:
+  #     context: "../RegistrationSys_StudentUI/RegistrationSys_StudentUI"
+  #     dockerfile: "./Dockerfile"
+  #   volumes: 
+  #   - type: "bind"
+  #     source: "../data"
+  #     target: "/app/data"
