@@ -41,11 +41,10 @@ public class Main {
         System.out.println("Number of verified batch files: "+verifiedNumber);
     }
     public static void main(String[] args) {
-        Model.databaseFilePath = "database";
-        Model.readFolderPath = "files/";
+        Model.databaseFilePath = "app/data/database";
+        Model.readFolderPath = "app/data/batch/";
         printStudentsStat();
         printNumberOfFiles();
         printNumberOfVerifiedFiles();
-
     }
 }
