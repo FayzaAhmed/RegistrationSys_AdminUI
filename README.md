@@ -9,7 +9,7 @@
 6- run docker-compose up </br>
 7- open another terminal </br>
 8- run docker ps to get the id of the newly running container </br>
-9- run docker attach "<ID>" </br>
+9- run docker attach "ID" </br>
 10- put the input as instructed </br>
 11- done ! </br>
 
