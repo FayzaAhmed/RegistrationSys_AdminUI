@@ -1,17 +1,12 @@
 version: "3"
 services:
-  admin:
-    build:
-      context: "./RegistrationSys_AdminUI/"
-      dockerfile: "./Dockerfile"
+  student_ui:
+    image: khaledwaled/a2_student_ui
     volumes:
       - ./data:/app/data
-  student:
-    build:
-      context: "../RegistrationSys_StudentUI/RegistrationSys_StudentUI/"
-      dockerfile: "./Dockerfile"
     stdin_open: true # docker run -i
     tty: true        # docker run -t
-    command: /bin/bash
+  admin_ui:
+    image: khaledwaled/a2_admin_ui
     volumes:
       - ./data:/app/data
