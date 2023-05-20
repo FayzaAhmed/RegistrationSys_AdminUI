@@ -10,6 +10,9 @@
 7- open another terminal </br>
 8- run docker ps to get the id of the newly running container </br>
 9- run docker attach "Container-ID" </br>
-10- put the input as instructed </br>
+10- Enter input to the program as required </br>
 11- done ! </br>
+
+
+ps: note that you have to enter the input in the second terminal based on what was printed in the first terminal.
 
